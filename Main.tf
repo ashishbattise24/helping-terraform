@@ -6,15 +6,15 @@ terraform {
   backend "s3" {
     bucket = "cloudquickpocsbackendtf"
     key    = "quickcloudpocsbackend_2.tfstate"
-    region = "us-east-1"
+    region = "ap-southeast-1"
   }
 }
 
 ## random provider
 provider "random" {}
 
-## Provider us-east-1
+## Provider ap-southeast-1
 provider "aws" {
-  region = "us-east-1"
+  region = "ap-southeast-1"
 }
 
